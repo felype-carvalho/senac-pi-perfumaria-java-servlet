@@ -1,0 +1,58 @@
+- Perfis separado por filiais, sendo elas: Campina Grande; São Paulo*; Brasília, Joinville;
+
+Quatro áreas principais: 
+* Produtos/Serviços/Marketing - Controle Estoque; Possibilidade de produtos exclusivos de determinadas regionais;
+
+* Vendas - Venda de produtos e oferecimento dos serviços nas filiais;
+
+* TI - Cadastro de funcionários aos sistemas mediante solicitação por e-mail.
+
+* Administrativo - Tarefas administrativas, tais como RH e Finanças;
+
+
+Módulos principais: 
+* Cadastro de vendas;
+* Gerenciamento dos produtos vendidos (Cadastro e Estoque)
+* Cadastro e manutenção dos clientes para ações de marketing
+* Exportação dos dados através de planilhas.
+
+
+Necessidades da empresa:
+* Perfil Backoffice: Validar produtos cadastrados nas novas filiais;
+* Criação de relatório semanal por filial para os gerentes regionais;
+* Perfil de gerente regional: Valor total faturado no dia atual em R$; Lista dos 10 produtos e 5 serviços mais vendidos no dia atual;
+* Permitir que áreas responsáveis possam corrigir informações e gerar relatórios de forma simples e por conta;
+* Relatório de faturamento em R$ de cada filial e participação de cada uma no faturamento total da empresa;
+* Cada filial possue 1 gerente regional;
+* Cada filial possui um subdepartamento de Estoque, de vendas e TI.
+* O gerente regional e os funcionários de cada matriz e cada filial só poderão ter acesso às informações registradas na própria filial;
+* A diretoria e os gerentes globais deverão ter acesso às informações consolidadas por filial nos relatórios
+* Armazenar todas as informações em um banco de dados relacional único.
+* 
+
+
+5 Grupos de tópicos para entrega da documentação:
+
+* Identificação e registro das regras de negócio da área escolhida
+* Requisitos funcionais e não funcionais;
+* Wireframes das telas principais, contendo layout das telas e o fluxo de navegação;
+* Diagrama e descrição detalhada dos casos de uso;
+* Diagrama das classes das entidades identificadas;
+
+
+
+
+
+Regras de negócio:
+
+- Caso o perfume seja importado, a fabricante deve emitir uma nota fiscal do produto.
+
+- Produtos importados não devem ser vendidos abaixo de R$ 150,00 reais e nacionais abaixo de R$ 55,00 reais.
+
+- Perfumes importados devem conter um selo ADIPEC registrado no Instituto Nacional de Propriedade Industrial - INPI.
+
+- Não é permitida a compra/venda de perfumes sejam eles nacionais ou internacionais que tenham em sua fase de criação, testes em animais.
+
+- Não será permitida a venda de mais de 50 quantidades de um mesmo produto para pessoas físicas (portadores de CPF).
+
+- Compras acima de R$350,00 tem frete grátis
