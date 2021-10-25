@@ -1,4 +1,5 @@
 br\senac\senac\pi\perfumaria\java\servlet\JAXRSConfiguration.class
+br\senac\senac\pi\perfumaria\java\servlet\servlet\TesteServlet.class
 br\senac\senac\pi\perfumaria\java\servlet\Conexao.class
 br\senac\senac\pi\perfumaria\java\servlet\dao\ClienteDAO.class
 br\senac\senac\pi\perfumaria\java\servlet\entidades\Cliente.class
