@@ -1,0 +1,87 @@
+<%-- 
+    Document   : menuLateral
+    Created on : 28 de out de 2021, 22:40:02
+    Author     : Felype
+--%>
+
+
+<!-- [ Pre-loader ] start -->
+<div class="loader-bg">
+    <div class="loader-track">
+        <div class="loader-fill"></div>
+    </div>
+</div>
+<!-- [ Pre-loader ] End -->
+<!-- [ Mobile header ] start -->
+<div class="pc-mob-header pc-header">
+    <div class="pcm-logo">
+        <img src="${pageContext.request.contextPath}/lib/images/logo.svg" alt="" class="logo logo-lg">
+    </div>
+    <div class="pcm-toolbar">
+        <a href="#!" class="pc-head-link" id="mobile-collapse">
+            <div class="hamburger hamburger--arrowturn">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </a>
+        <a href="#!" class="pc-head-link" id="headerdrp-collapse">
+            <i data-feather="align-right"></i>
+        </a>
+        <a href="#!" class="pc-head-link" id="header-collapse">
+            <i data-feather="more-vertical"></i>
+        </a>
+    </div>
+</div>
+<!-- [ Mobile header ] End -->
+
+<!-- [ navigation menu ] start -->
+<nav class="pc-sidebar ">
+    <div class="navbar-wrapper">
+        <div class="m-header">
+            <a href="index.html" class="b-brand">
+                <!-- ========   change your logo hear   ============ -->
+                <img src="${pageContext.request.contextPath}/lib/images/logo.svg" alt="" class="logo logo-lg">
+                <img src="${pageContext.request.contextPath}/lib/images/logo-sm.svg" alt="" class="logo logo-sm">
+            </a>
+        </div>
+        <div class="navbar-content">
+            <ul class="pc-navbar">
+                <li class="pc-item pc-caption">
+                    <label>Menu de Navegação</label>
+                </li>
+                <li class="pc-item">
+                    <a href="index.html" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Inicio</span></a>
+                </li>
+                <li class="pc-item">
+                    <a href="icon-feather.html" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Realizar Vendas</span></a>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Cadastro</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="#!">Clientes</a></li>
+                        <li class="pc-item"><a class="pc-link" href="#!">Produtos</a></li>
+                        <li class="pc-item"><a class="pc-link" href=="#!">Categorias de Produto</a></li>
+                        <li class="pc-item"><a class="pc-link" href=="#!">Fornecedor</a></li>
+                        <li class="pc-item"><a class="pc-link" href=="#!">Filial</a></li>
+                        <li class="pc-item"><a class="pc-link" href="#!">Usuários</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Relatórios</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="bc_alert.html">Vendas Semanais</a></li>
+                        <li class="pc-item"><a class="pc-link" href="bc_button.html">Vendas por Filial</a></li>
+
+                    </ul>
+                </li>
+                <li class="pc-item">
+                    <a href="icon-feather.html" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Controle de Usuários</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- [ navigation menu ] end -->
+
+
