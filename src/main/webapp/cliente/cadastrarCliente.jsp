@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label for="validationTooltip02" class="form-label">CPF</label>
-                                        <input type="text" class="form-control" id="validationTooltip02" required>
+                                        <input type="text" class="form-control" id="validationTooltip02" required onkeypress="$(this).mask(000.000.000-00);">
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -68,14 +68,16 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 position-relative">
-                                        <label for="validationTooltip02" class="form-label">Estado Civil</label>
-                                        <input type="text" class="form-control" id="validationTooltip04" required>
-                                        <div class="valid-tooltip">
-                                            Looks good!
-                                        </div>
-                                        <div class="invalid-tooltip">
-                                            Please choose a unique and valid username.
-                                        </div>
+                                        <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlSelect1">Estado Cívil</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Selecione um Estado...</option>
+                                            <option>Solteiro</option>
+                                            <option>Casado</option>
+                                            <option>Separado</option>
+                                            <option>Viúvo</option>
+                                        </select>
+                                    </div>
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label for="validationTooltip02" class="form-label">Telefone</label>
@@ -143,14 +145,37 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 position-relative">
-                                        <label for="validationTooltip02" class="form-label">Estado</label>
-                                        <input type="text" class="form-control" id="validationTooltip05" required>
-                                        <div class="valid-tooltip">
-                                            Looks good!
-                                        </div>
-                                        <div class="invalid-tooltip">
-                                            Please choose a unique and valid username.
-                                        </div>
+                                        <div class="form-group">
+                                        <label class="form-label" for="exampleFormControlSelect2">Estado</label>
+                                        <select class="form-control" id="exampleFormControlSelect2">
+                                            <option>Selecione um Estado</option>
+                                            <option>AC</option>
+                                            <option>AL</option>
+                                            <option>AP</option>
+                                            <option>AM</option>
+                                            <option>BA</option>
+                                            <option>CE</option>
+                                            <option>DF</option>
+                                            <option>ES</option>
+                                            <option>GO</option>
+                                            <option>MA</option>
+                                            <option>MT</option>
+                                            <option>MS</option>
+                                            <option>MG</option>
+                                            <option>PA</option>
+                                            <option>PB</option>
+                                            <option>PR</option>
+                                            <option>PE</option>
+                                            <option>PI</option>
+                                            <option>RJ</option>
+                                            <option>RO</option>
+                                            <option>RR</option>
+                                            <option>SC</option>
+                                            <option>SP</option>
+                                            <option>SE</option>
+                                            <option>TO</option>
+                                        </select>
+                                    </div>
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-primary" type="submit">Cadastrar</button>

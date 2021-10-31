@@ -28,5 +28,5 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/lib/css/style.css" id="main-style-link"">
 
 
-<script src="${pageContext.request.contextPath}/lib/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+
 <title> Teste</title>
