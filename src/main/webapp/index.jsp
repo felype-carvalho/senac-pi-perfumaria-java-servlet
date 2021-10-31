@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <c:import url="uteis/header.jsp"/>
+        <c:import url="uteis/header-import.jsp"/>
     </head>
     <body class="">
         <!-- <h1>Tela Principal</h1> -->
@@ -20,4 +20,5 @@
             </div>
         </div>
     </body>
+    <c:import url="../uteis/footer-import.jsp"/>
 </html>
