@@ -20,5 +20,5 @@
             </div>
         </div>
     </body>
-    <c:import url="../uteis/footer-import.jsp"/>
+    <c:import url="uteis/footer-import.jsp"/>
 </html>

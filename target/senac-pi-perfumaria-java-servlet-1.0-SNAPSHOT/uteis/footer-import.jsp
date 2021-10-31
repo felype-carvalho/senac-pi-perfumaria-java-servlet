@@ -9,4 +9,4 @@
 <script src="${pageContext.request.contextPath}/lib/js/plugins/feather.min.js"></script>
 <script src="${pageContext.request.contextPath}/lib/js/pcoded.min.js"></script>
 <script src="${pageContext.request.contextPath}/lib/js/jquery-3.6.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+

@@ -8,7 +8,6 @@ br\senac\senac\pi\perfumaria\java\servlet\servlet\CadastrarCategoriaServlet.clas
 br\senac\senac\pi\perfumaria\java\servlet\servlet\CadastrarClienteServlet.class
 br\senac\senac\pi\perfumaria\java\servlet\servlet\CadastrarUsuarioServlet.class
 br\senac\senac\pi\perfumaria\java\servlet\servlet\RelatorioFilialServlet.class
-br\senac\senac\pi\perfumaria\java\servlet\servlet\TesteServlet.class
 br\senac\senac\pi\perfumaria\java\servlet\servlet\CadastrarProdutoServlet.class
 br\senac\senac\pi\perfumaria\java\servlet\dao\ClienteDAO.class
 br\senac\senac\pi\perfumaria\java\servlet\servlet\ListarCategoriaServlet.class

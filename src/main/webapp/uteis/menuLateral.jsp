@@ -51,27 +51,27 @@
                     <label>Menu de Navegação</label>
                 </li>
                 <li class="pc-item">
-                    <a href="index.html" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Inicio</span></a>
+                    <a href="${pageContext.request.contextPath}/index.jsp" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Inicio</span></a>
                 </li>
                 <li class="pc-item">
-                    <a href="icon-feather.html" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Realizar Vendas</span></a>
+                    <a href="${pageContext.request.contextPath}/venda.jsp" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Realizar Vendas</span></a>
                 </li>
                 <li class="pc-item pc-hasmenu">
                     <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Cadastro</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="#!">Clientes</a></li>
-                        <li class="pc-item"><a class="pc-link" href="#!">Produtos</a></li>
-                        <li class="pc-item"><a class="pc-link" href=="#!">Categorias de Produto</a></li>
-                        <li class="pc-item"><a class="pc-link" href=="#!">Fornecedor</a></li>
-                        <li class="pc-item"><a class="pc-link" href=="#!">Filial</a></li>
-                        <li class="pc-item"><a class="pc-link" href="#!">Usuários</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/cliente/listarCliente.jsp">Clientes</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/produto/listarProduto.jsp">Produtos</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/categoria/listarCategoria.jsp">Categorias de Produto</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/fornecedor/listarFornecedor.jsp">Fornecedor</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/filial/listarFilial.jsp">Filial</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/usuario/listarUsuario.jsp">Usuários</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
                     <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Relatórios</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="bc_alert.html">Vendas Semanais</a></li>
-                        <li class="pc-item"><a class="pc-link" href="bc_button.html">Vendas por Filial</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioFilial.jsp">Vendas Semanais</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioSemanal.jsp">Vendas por Filial</a></li>
 
                     </ul>
                 </li>
