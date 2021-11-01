@@ -25,8 +25,11 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/lib/fonts/material.css">
 
 <!-- vendor css -->
-<link rel="stylesheet" href="${pageContext.request.contextPath}/lib/css/style.css" id="main-style-link"">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/lib/css/style.css" id="main-style-link">
+
+<!-- Jquery Table -->
+<link rel="stylesheet" href="${pageContext.request.contextPath}/lib/css/jquery.dataTables.min.css">
 
 
 
-<title> Teste</title>
+

@@ -72,7 +72,6 @@
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioFilial.jsp">Vendas Semanais</a></li>
                         <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioSemanal.jsp">Vendas por Filial</a></li>
-
                     </ul>
                 </li>
                 <li class="pc-item">

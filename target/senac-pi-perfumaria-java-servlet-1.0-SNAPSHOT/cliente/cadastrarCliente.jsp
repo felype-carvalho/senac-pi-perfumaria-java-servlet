@@ -10,6 +10,7 @@
 <html>
     <head>
         <c:import url="../uteis/header-import.jsp"/>
+        <title>Cadastro de Cliente</title>
     </head>
     <body class="">
         <!-- <h1>Tela Principal</h1> -->
