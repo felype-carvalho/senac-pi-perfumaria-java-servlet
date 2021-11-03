@@ -54,10 +54,10 @@
                     <a href="${pageContext.request.contextPath}/index.jsp" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">home</i></span><span class="pc-mtext">Inicio</span></a>
                 </li>
                 <li class="pc-item">
-                    <a href="${pageContext.request.contextPath}/venda.jsp" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">history_edu</i></span><span class="pc-mtext">Realizar Vendas</span></a>
+                    <a href="${pageContext.request.contextPath}/venda.jsp" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">next_week</i></span><span class="pc-mtext">Realizar Vendas</span></a>
                 </li>
                 <li class="pc-item pc-hasmenu">
-                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Cadastro</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">dvr</i></span><span class="pc-mtext">Cadastro</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/cliente/listarCliente.jsp">Clientes</a></li>
                         <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/produto/listarProduto.jsp">Produtos</a></li>
@@ -68,7 +68,7 @@
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
-                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">business_center</i></span><span class="pc-mtext">Relatórios</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">trending_up</i></span><span class="pc-mtext">Relatórios</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioFilial.jsp">Vendas Semanais</a></li>
                         <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioSemanal.jsp">Vendas por Filial</a></li>

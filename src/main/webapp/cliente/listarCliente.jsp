@@ -24,182 +24,123 @@
                                 <h3>Listar Clientes</h3>
                             </div>
                             <div class="card-body table-border-style">
+                                <form class="form-group" action="${pageContext.request.contextPath}/cliente/cadastrarCliente.jsp">
+                                    <button type="submit" class="btn btn-sm btn-success">+ Novo Cliente</button>
+                                </form>
                                 <div class="table-responsive">
                                     <table id="tabelaCliente" class="display table table-hover table-striped" style="width:100%">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
-                                                <th>Salary</th>
+                                                <th>#</th>
+                                                <th>Nome</th>
+                                                <th>CPF</th>
+                                                <th>E-mail</th>
+                                                <th>Data de Nascimento</th>
+                                                <th>Funções</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Tiger Nixon</td>
-                                                <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                                <td>$320,800</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>63</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>Accountant</td>
-                                                <td>Tokyo</td>
-                                                <td>64</td>
-                                                <td>2011/07/25</td>
-                                                <td>$170,750</td>
+                                                <td>1</td>
+                                                <td>Fabricio Belomo Saske</td>
+                                                <td>00000000011</td>
+                                                <td>aaa@email.com</td>
+                                                <td>03/07/2000</td>
+                                                <td>
+                                                    
+                                                    <a class="btn btn-sm btn-icon btn-info" href="#" data-toggle="modal" data-target="#viewModal"><i data-feather="eye"></i></a>
+                                                    <a class="btn btn-sm btn-icon btn-warning" href="${pageContext.request.contextPath}/cliente/cadastrarCliente.jsp"><i data-feather="edit"></i></a>
+                                                    <a class="btn btn-sm btn-icon btn-danger" href="#" data-toggle="modal" data-target="#deleteModal"><i data-feather="x"></i></a>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- Modals -->
+
+                                <!-- Modal Delete -->
+                                <c:import url="../uteis/deleteModal.jsp"/>
+
+                                <!-- Modal View -->
+                                <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen p-25">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title h4" id="viewModalLabel">Visualização de dados do cliente</h5>
+                                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5 class="">Dados Pessoais</h5>
+                                                <hr>
+                                                <form class="row g-3 needs-validation" novalidate>
+                                                    <div class="col-md-8 position-relative">
+                                                        <label for="validationTooltip01" class="form-label">Nome Completo</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+
+                                                    </div>
+                                                    <div class="col-md-4 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">CPF</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-6 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">E-mail</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-3 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">Data de Nascimento</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-3 position-relative">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="exampleFormControlSelect1">Estado Cívil</label>
+                                                            <input type="text" class="form-control" readonly value="#">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">Telefone</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+
+                                                </form>
+                                                <h5 class="mt-5">Endereço</h5>
+                                                <hr>
+                                                <form class="row g-3 needs-validation" novalidate>
+                                                    <div class="col-md-6 position-relative">
+                                                        <label for="validationTooltip01" class="form-label">Lougradouro</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-3 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">Número</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-3 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">CEP</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-4 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">Bairro</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-4 position-relative">
+                                                        <label for="validationTooltip02" class="form-label">Cidade</label>
+                                                        <input type="text" class="form-control" readonly value="#">
+                                                    </div>
+                                                    <div class="col-md-3 position-relative">
+                                                        <div class="form-group">
+                                                            <label class="form-label" for="exampleFormControlSelect2">Estado</label>
+                                                            <input type="text" class="form-control" readonly value="#">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -217,8 +158,8 @@
                 "language": {
                     "decimal": "",
                     "emptyTable": "Sem dados na Tabela",
-                    "info": "Mostrando _START_ até _END_ de _TOTAL_ entradas",
-                    "infoEmpty": "Mostrando 0 ate 0 de 0 entradas",
+                    "info": "Mostrando de _START_ até _END_ do total de _TOTAL_ entradas",
+                    "infoEmpty": "Mostrando de 0 ate 0 do total de 0 entradas",
                     "infoFiltered": "(filtrado do total de _MAX_ entradas)",
                     "infoPostFix": "",
                     "thousands": ",",
