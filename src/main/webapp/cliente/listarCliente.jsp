@@ -28,7 +28,7 @@
                                     <button type="submit" class="btn btn-sm btn-success">+ Novo Cliente</button>
                                 </form>
                                 <div class="table-responsive">
-                                    <table id="tabelaCliente" class="display table table-hover table-striped" style="width:100%">
+                                    <table class="display table table-hover table-striped" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
@@ -149,34 +149,5 @@
         </div>
     </body>
     <c:import url="../uteis/footer-import.jsp"/>
-    <script>
-        $(document).ready(function () {
-            $('#tabelaCliente').DataTable({
-                "paging": true,
-                "ordering": true,
-                "info": true,
-                "language": {
-                    "decimal": "",
-                    "emptyTable": "Sem dados na Tabela",
-                    "info": "Mostrando de _START_ até _END_ do total de _TOTAL_ entradas",
-                    "infoEmpty": "Mostrando de 0 ate 0 do total de 0 entradas",
-                    "infoFiltered": "(filtrado do total de _MAX_ entradas)",
-                    "infoPostFix": "",
-                    "thousands": ",",
-                    "lengthMenu": "Mostrando _MENU_ entradas",
-                    "loadingRecords": "Carregando...",
-                    "processing": "Processando...",
-                    "search": "Pesquisar:",
-                    "zeroRecords": "Nenhum registro correspondente encontrado",
-                    "paginar": {
-                        "first": "Primeiro",
-                        "last": "Ultimo",
-                        "next": "Próximo",
-                        "previous": "Anterior"
-                    },
-                }
-
-            });
-        });
-    </script>
+    <c:import url="../uteis/data-table-import.jsp"/>
 </html>
