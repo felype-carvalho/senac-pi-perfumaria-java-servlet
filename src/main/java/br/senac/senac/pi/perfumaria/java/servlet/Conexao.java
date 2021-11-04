@@ -49,9 +49,9 @@ public class Conexao {
 
     public static Connection getConexao() {
 
-        String url = "jdbc:derby://localhost:1527/senac";
-        String user = "senac";
-        String password = "senac";
+        String url = "jdbc:derby://localhost:1527/sample";
+        String user = "app";
+        String password = "app";
 
         Connection con = null;
         try {

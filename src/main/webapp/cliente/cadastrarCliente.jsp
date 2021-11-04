@@ -30,7 +30,7 @@
                                 <form class="row g-3 needs-validation" novalidate>
                                     <div class="col-md-8 position-relative">
                                         <label for="validationTooltip01" class="form-label">Nome Completo</label>
-                                        <input type="text" class="form-control" id="validationTooltip01" required>
+                                        <input type="text" name="nomeCliente" class="form-control" id="validationTooltip01" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -40,7 +40,7 @@
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label for="validationTooltip02" class="form-label">CPF</label>
-                                        <input type="text" class="form-control" id="validationTooltip02" required onkeypress="$(this).mask(000.000.000-00);">
+                                        <input type="text" name="cpfCliente" class="form-control" id="validationTooltip02" required onkeypress="$(this).mask(000.000.000-00);">
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -50,7 +50,7 @@
                                     </div>
                                     <div class="col-md-6 position-relative">
                                         <label for="validationTooltip02" class="form-label">E-mail</label>
-                                        <input type="text" class="form-control" id="validationTooltip05" required>
+                                        <input type="text" name="emailCliente" class="form-control" id="validationTooltip05" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -60,7 +60,7 @@
                                     </div>
                                     <div class="col-md-3 position-relative">
                                         <label for="validationTooltip02" class="form-label">Data de Nascimento</label>
-                                        <input type="text" class="form-control" id="validationTooltip03" required>
+                                        <input type="text" name="dataNascimentoCliente" class="form-control" id="validationTooltip03" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -71,7 +71,7 @@
                                     <div class="col-md-3 position-relative">
                                         <div class="form-group">
                                         <label class="form-label" for="exampleFormControlSelect1">Estado Cívil</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <select name="estadoCivilCliente" class="form-control" id="exampleFormControlSelect1">
                                             <option>Selecione um Estado...</option>
                                             <option>Solteiro</option>
                                             <option>Casado</option>
@@ -82,7 +82,7 @@
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label for="validationTooltip02" class="form-label">Telefone</label>
-                                        <input type="text" class="form-control" id="validationTooltip05" required>
+                                        <input type="text" name="telefoneCliente" class="form-control" id="validationTooltip05" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -97,7 +97,7 @@
                                 <form class="row g-3 needs-validation" novalidate>
                                     <div class="col-md-6 position-relative">
                                         <label for="validationTooltip01" class="form-label">Lougradouro</label>
-                                        <input type="text" class="form-control" id="validationTooltip01" required>
+                                        <input type="text" name="logradouroCliente" class="form-control" id="validationTooltip01" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="col-md-3 position-relative">
                                         <label for="validationTooltip02" class="form-label">Número</label>
-                                        <input type="text" class="form-control" id="validationTooltip02" required>
+                                        <input type="text" name="numeroCliente" class="form-control" id="validationTooltip02" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="col-md-3 position-relative">
                                         <label for="validationTooltip02" class="form-label">CEP</label>
-                                        <input type="text" class="form-control" id="validationTooltip03" required>
+                                        <input type="text" name="cepCliente" class="form-control" id="validationTooltip03" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -127,7 +127,7 @@
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label for="validationTooltip02" class="form-label">Bairro</label>
-                                        <input type="text" class="form-control" id="validationTooltip04" required>
+                                        <input type="text" name="bairroCliente" class="form-control" id="validationTooltip04" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -137,7 +137,7 @@
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label for="validationTooltip02" class="form-label">Cidade</label>
-                                        <input type="text" class="form-control" id="validationTooltip05" required>
+                                        <input type="text" name="cidadeCliente" class="form-control" id="validationTooltip05" required>
                                         <div class="valid-tooltip">
                                             Looks good!
                                         </div>
@@ -148,7 +148,7 @@
                                     <div class="col-md-3 position-relative">
                                         <div class="form-group">
                                         <label class="form-label" for="exampleFormControlSelect2">Estado</label>
-                                        <select class="form-control" id="exampleFormControlSelect2">
+                                        <select class="form-control" name="ufCliente" id="exampleFormControlSelect2">
                                             <option>Selecione um Estado</option>
                                             <option>AC</option>
                                             <option>AL</option>

@@ -25,12 +25,16 @@ public class Cliente {
 
     private String estadoCivil;
 
-    private String endereco;
+    private String logradouro;
 
-   private String cep;
+    private int numero;
 
-   private String cidade;
+    private String bairro;
 
-   private String uf;
+    private String cep;
+
+    private String cidade;
+
+    private String uf;
 
 }
