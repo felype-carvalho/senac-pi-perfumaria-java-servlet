@@ -13,7 +13,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>O item foi excluido com sucesso!</p>
+                <p>O item foi excluido com sucesso! </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>

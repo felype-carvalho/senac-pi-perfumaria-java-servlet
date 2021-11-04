@@ -70,8 +70,8 @@
                 <li class="pc-item pc-hasmenu">
                     <a href="#!" class="pc-link "><span class="pc-micon"><i class="material-icons-two-tone">trending_up</i></span><span class="pc-mtext">Relatórios</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioFilial.jsp">Vendas Semanais</a></li>
-                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioSemanal.jsp">Vendas por Filial</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioSemanal.jsp">Vendas Semanais</a></li>
+                        <li class="pc-item"><a class="pc-link" href="${pageContext.request.contextPath}/relatorio/relatorioFilial.jsp">Vendas por Filial</a></li>
                     </ul>
                 </li>
                 <li class="pc-item">
