@@ -27,7 +27,7 @@
                                 <hr>
                                 <form class="row g-3" action="CadastrarClienteServlet" method="POST">
                                     <c:if test="${not empty clienteAtualizacao}">
-                                        <input type="hidden" name="operacao" value="1"/>
+                                        <input type="hidden" name="operacaoCliente" value="1"/>
                                         <input type="hidden" name="idCliente" value="${clienteAtualizacao.idCliente}"/>
                                     </c:if>
                                     <div class="col-md-8 position-relative">

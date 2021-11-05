@@ -71,30 +71,30 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <form class="row g-3 needs-validation" novalidate>
+                                                <form class="row g-3">
                                                     <div class="col-md-8 position-relative">
-                                                        <label for="validationTooltip01" class="form-label">Nome do Produto</label>
-                                                        <input type="text" class="form-control" id="validationTooltip01" readonly required>
+                                                        <label for="vNomeProduto" class="form-label">Nome do Produto</label>
+                                                        <input type="text" class="form-control" name="vNomeProduto" readonly value="${produtoAtualizacao.nome}">
                                                     </div>
                                                     <div class="col-md-4 position-relative">
                                                         <div class="form-group">
-                                                            <label class="form-label" for="exampleFormControlSelect1">Categoria</label>
-                                                            <input type="text" class="form-control" id="validationTooltip01" readonly required>
+                                                            <label class="form-label" for="vCategoriaProduto">Categoria</label>
+                                                            <input type="text" class="form-control" name="vCategoriaProduto" readonly value="${produtoAtualizacao.idCategProduto}">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 position-relative">
                                                         <div class="form-group">
-                                                            <label class="form-label" for="exampleFormControlTextarea1">Descrição</label>
-                                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly></textarea>
+                                                            <label class="form-label" for="vDescricaoProduto">Descrição</label>
+                                                            <textarea class="form-control" name="vDescricaoProduto" rows="3" readonly>${produtoAtualizacao.descricao}</textarea>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <label for="validationTooltip01" class="form-label">Quantidade</label>
-                                                        <input type="text" class="form-control" id="validationTooltip01" readonly required>
+                                                        <label for="vQuantidadeProduto" class="form-label">Quantidade</label>
+                                                        <input type="text" class="form-control" name="vQuantidadeProduto" readonly value="${produtoAtualizacao.qtd}">
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <label for="validationTooltip01" class="form-label">Preço</label>
-                                                        <input type="text" class="form-control" id="validationTooltip01" readonly required>
+                                                        <label for="vPrecoProduto" class="form-label">Preço</label>
+                                                        <input type="text" class="form-control" name="vPrecoProduto" readonly value="${produtoAtualizacao.preco}">
                                                     </div>
                                                 </form>
                                             </div>

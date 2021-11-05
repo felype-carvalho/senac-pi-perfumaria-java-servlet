@@ -26,36 +26,40 @@
                             <div class="card-body">
                                 <h5 class="">Novo Produto</h5>
                                 <hr>
-                                <form class="row g-3 needs-validation" novalidate>
+                                <form class="row g-3">
+                                    <c:if test="${not empty produtoAtualizacao}">
+                                        <input type="hidden" name="operacaoProduto" value="1"/>
+                                        <input type="hidden" name="idProduto" value="${produtoAtualizacao.idCliente}"/>
+                                    </c:if>
                                     <div class="col-md-8 position-relative">
-                                        <label for="validationTooltip01" class="form-label">Nome do Produto</label>
-                                        <input type="text" class="form-control" id="validationTooltip01" required>
+                                        <label for="cNomeProduto" class="form-label">Nome do Produto</label>
+                                        <input type="text" class="form-control" name="cNomeProduto" required value="${produtoAtualizacao.nome}">
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlSelect1">Categoria</label>
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>Perfumaria</option>
-                                                <option>Corpo e banho</option>
-                                                <option>Maquiagem</option>
-                                                <option>Cabelo</option>
-                                                <option>Pele</option>
+                                            <label class="form-label" for="cCategoriaProduto">Categoria</label>
+                                            <select class="form-control" name="cCategoriaProduto" required>
+                                                <option value="perfumaria">Perfumaria</option>
+                                                <option value="corpo e banho">Corpo e banho</option>
+                                                <option value="maquiagem">Maquiagem</option>
+                                                <option value="perfumaria">Cabelo</option>
+                                                <option value="pele">Pele</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6 position-relative">
                                         <div class="form-group">
-                                            <label class="form-label" for="exampleFormControlTextarea1">Descrição</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label class="form-label" for="cDescricaoProduto">Descrição</label>
+                                            <textarea class="form-control" name="cDescricaoProduto" rows="3">${produtoAtualizacao.descricao}</textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-3 position-relative">
-                                        <label for="validationTooltip01" class="form-label">Quantidade</label>
-                                        <input type="text" class="form-control" id="validationTooltip01" required>
+                                        <label for="cQuantidadeProduto" class="form-label">Quantidade</label>
+                                        <input type="text" class="form-control" name="cQuantidadeProduto" required value="${produtoAtualizacao.qtd}">
                                     </div>
                                     <div class="col-md-3 position-relative">
-                                        <label for="validationTooltip01" class="form-label">Preço</label>
-                                        <input type="text" class="form-control" id="validationTooltip01" required>
+                                        <label for="cPrecoProduto" class="form-label">Preço</label>
+                                        <input type="text" class="form-control" name="cPrecoProduto" required value="${produtoAtualizacao.preco}">
                                     </div>
                                     <div class="col-12">
                                         <button class="btn btn-primary" type="submit">Cadastrar</button>
