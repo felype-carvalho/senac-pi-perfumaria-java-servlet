@@ -72,6 +72,10 @@
         <servlet-name>RelatorioSemanalServlet</servlet-name>
         <servlet-class>br.senac.senac.pi.perfumaria.java.servlet.servlet.RelatorioSemanalServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CadastrarVendaServlet</servlet-name>
+        <servlet-class>br.senac.senac.pi.perfumaria.java.servlet.servlet.CadastrarVendaServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TesteServlet</servlet-name>
         <url-pattern>/TesteServlet</url-pattern>
@@ -143,6 +147,10 @@
     <servlet-mapping>
         <servlet-name>RelatorioSemanalServlet</servlet-name>
         <url-pattern>/relatorio/semanal</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastrarVendaServlet</servlet-name>
+        <url-pattern>/venda/cadastrar</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

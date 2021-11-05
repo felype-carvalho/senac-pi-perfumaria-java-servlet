@@ -22,32 +22,9 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class CadastrarClienteServlet extends HttpServlet {
 
-//    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        response.setContentType("text/html;charset=UTF-8");
-//        try (PrintWriter out = response.getWriter()) {
-//            /* TODO output your page here. You may use following sample code. */
-//            out.println("<!DOCTYPE html>");
-//            out.println("<html>");
-//            out.println("<head>");
-//            out.println("<title>Servlet CadastrarClienteServlet</title>");            
-//            out.println("</head>");
-//            out.println("<body>");
-//            out.println("<h1>Servlet CadastrarClienteServlet at " + request.getContextPath() + "</h1>");
-//            out.println("</body>");
-//            out.println("</html>");
-//        }
-//    }
-
-//    @Override
-//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-//            throws ServletException, IOException {
-//        processRequest(request, response);
-//    }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String operacao = request.getParameter("operacao");
+        String operacao = request.getParameter("operacaoCliente");
 
         String nome = request.getParameter("nomeCliente");
         String cpf = request.getParameter("cpfCliente");
@@ -86,7 +63,17 @@ public class CadastrarClienteServlet extends HttpServlet {
     }
 
     @Override
-    public String getServletInfo() {
-        return "Short description";
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String idCliente = req.getParameter("idCliente");
+        String operacaoGETCliente = req.getParameter("operacaoGetCliente");
+        //OPE = 1 => Atualização
+        if ("1".equals(operacaoGETCliente)) {
+            Cliente cliente = ClienteDAO.visualizarCliente(Integer.parseInt(idCliente));
+            req.setAttribute("clienteAtualizacao", cliente);
+            req.getRequestDispatcher("/cliente/cadastrarCliente.jsp").forward(req, resp);
+        } else {
+            ClienteDAO.deletarCliente(Integer.parseInt(idCliente));
+            resp.sendRedirect(req.getContextPath() + "/cliente/listar");
+        }
     }
 }
