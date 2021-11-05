@@ -81,7 +81,7 @@ public class CadastrarClienteServlet extends HttpServlet {
         } else {
             ClienteDAO.inserirCliente(cliente);
         }
-  
+
         response.sendRedirect(request.getContextPath()+"/uteis/sucesso.jsp");
     }
 

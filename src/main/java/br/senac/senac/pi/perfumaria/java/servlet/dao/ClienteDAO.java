@@ -20,9 +20,10 @@ public class ClienteDAO {
     public static List<Cliente> listarClientes() {
         List<Cliente> clientes = new ArrayList<>();
         String query = "SELECT * FROM cliente;";
+        Connection con = null;
 
-        Connection con = Conexao.getConexao();
         try {
+            con = Conexao.getConexao();
             PreparedStatement ps = con.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
 
@@ -70,9 +71,10 @@ public class ClienteDAO {
         boolean ok = true;
         String query = "INSERT INTO cliente(nome, cpf, numero_telefone, email, data_nascimento, estado_civil, logradouro, bairro, numero, cep, cidade, uf) "
                      + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
-        Connection con = Conexao.getConexao();
+        Connection con = null;
 
         try {
+            con = Conexao.getConexao();
             PreparedStatement ps = con.prepareStatement(query);
 
             ps.setString(1, cliente.getNome());
@@ -112,9 +114,10 @@ public class ClienteDAO {
                                         + "cidade=?, "
                                         + "uf=? "
                      + "WHERE id_cliente = ?;";
-        Connection con = Conexao.getConexao();
+        Connection con = null;
 
         try {
+            con = Conexao.getConexao();
             PreparedStatement ps = con.prepareStatement(query);
 
             ps.setString(1, cliente.getNome());
@@ -140,12 +143,45 @@ public class ClienteDAO {
         return ok;
     }
 
+    public static Cliente visualizarCliente(int idClienteV) {
+        Cliente cliente = new Cliente();
+        String query = "SELECT * FROM cliente WHERE id_cliente = ?;";
+        Connection con = null;
+
+        try {
+            con = Conexao.getConexao();
+            PreparedStatement ps = con.prepareStatement(query);
+            ps.setInt(1, idClienteV);
+            ResultSet rs = ps.executeQuery();
+
+            cliente.setIdCliente(rs.getInt("id_cliente"));
+            cliente.setNome(rs.getString("nome"));
+            cliente.setCpf(rs.getString("cpf"));
+            cliente.setNumeroTelefone(rs.getString("numero_telefone"));
+            cliente.setEmail(rs.getString("email"));
+            cliente.setDataNascimento(rs.getDate("data_nascimento"));
+            cliente.setEstadoCivil(rs.getString("estado_civil"));
+            cliente.setLogradouro(rs.getString("logradouro"));
+            cliente.setBairro(rs.getString("bairro"));
+            cliente.setNumero(rs.getInt("numero"));
+            cliente.setCep(rs.getString("cep"));
+            cliente.setCidade(rs.getString("cidade"));
+            cliente.setUf(rs.getString("uf"));
+
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return cliente;
+    }
+
     public static boolean deletarCliente(int idCliente) {
         boolean ok = true;
         String query = "DELETE FROM cliente WHERE id_cliente = ?";
-        Connection con = Conexao.getConexao();
+        Connection con = null;
 
         try {
+            con = Conexao.getConexao();
             PreparedStatement ps = con.prepareStatement(query);
 
             ps.setInt(1, idCliente);
