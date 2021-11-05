@@ -1,5 +1,5 @@
 <%-- 
-    Document   : visulizarCliente
+    Document   : visulizarProduto
     Created on : 24 de out de 2021, 21:45:40
     Author     : Felype
 --%>
@@ -10,11 +10,14 @@
 <html>
     <head>
         <c:import url="../uteis/header-import.jsp"/>
-        <title>Listar Clientes</title>
+        <title>Listar Produtos</title>
     </head>
     <body class="">
         <!-- <h1>Tela Principal</h1> -->
         <c:import url="../uteis/menuLateral.jsp"/>
+        <div id="alertaProduto" class="alert alert-success" role="alert" style="display:none">
+            Produto removido com sucesso!
+        </div>
         <div class="pc-container">
             <div class="pcoded-content">
                 <div class="row">
@@ -41,6 +44,20 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <c:forEach var="produto" items="${listaProdutos}">
+                                                <tr>
+                                                    <td>${produto.idProduto}</td>
+                                                    <td>${produto.nome}</td>
+                                                    <td>${produto.qtd}</td>
+                                                    <td>${produto.idCategProduto}</td>
+                                                    <td>${produto.preco}</td>
+                                                    <td>
+                                                        <a class="btn btn-sm btn-icon btn-info" href="#" data-toggle="modal" data-target="#viewModalProduto"><i data-feather="eye"></i></a>
+                                                        <a class="btn btn-sm btn-icon btn-warning" href="CadastroProdutoServlet?idProduto=${produto.idProduto}&operacaoGetProduto=1"><i data-feather="edit"></i></a>
+                                                        <a class="btn btn-sm btn-icon btn-danger" href="#" data-toggle="modal" data-target="#deleteModal"><i data-feather="x"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </c:forEach>
                                             <tr>
                                                 <td>1</td>
                                                 <td>Malbac</td>
@@ -59,7 +76,24 @@
                                 <!-- Modals -->
 
                                 <!-- Modal Delete -->
-                                <c:import url="../uteis/deleteModal.jsp"/>
+                                <div class="modal fade" id="deleteProdutoModal" tabindex="-1" aria-labelledby="deleteProdutoModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-fullscreen-md-down">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title h4" id="deleteProdutoModalLabel">Atenção!</h5>
+                                                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Tem certeza que deseja excluir esse registro? </p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="deletarProduto('${Produto.idProduto}')">Excluir</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <!-- Modal View -->
                                 <div class="modal fade" id="viewModalProduto" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
@@ -114,4 +148,21 @@
 </body>
 <c:import url="../uteis/footer-import.jsp"/>
 <c:import url="../uteis/data-table-import.jsp"/>
+<script type="text/javascript">
+    function deletarProduto(idProduto) {
+        console.log("Excluindo produto ", idProduto);
+        var url = "CadastroProdutoServlet?idProduto=" + idProduto;
+        $.ajax(url).done(function () {
+            console.log("Produto removido!");
+            var alerta = $("#alertaProduto");
+            alerta.css("display", "block");
+            setTimeout(function () {
+                alerta.css("display", "none");
+                location.reload();
+            }, 1000)
+        }).fail(function () {
+            console.log("Erro ao remover o produto!");
+        })
+    }
+</script>
 </html>
