@@ -28,7 +28,7 @@
                                     <button type="submit" class="btn btn-sm btn-success">+ Novo Cliente</button>
                                 </form>
                                 <div class="table-responsive">
-                                    <table class="display table table-hover table-striped" style="width:100%">
+                                    <table class="display table table-hover table-striped pt-2" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
@@ -47,7 +47,7 @@
                                                 <td>aaa@email.com</td>
                                                 <td>03/07/2000</td>
                                                 <td>
-                                                    
+
                                                     <a class="btn btn-sm btn-icon btn-info" href="#" data-toggle="modal" data-target="#viewModal"><i data-feather="eye"></i></a>
                                                     <a class="btn btn-sm btn-icon btn-warning" href="${pageContext.request.contextPath}/cliente/cadastrarCliente.jsp"><i data-feather="edit"></i></a>
                                                     <a class="btn btn-sm btn-icon btn-danger" href="#" data-toggle="modal" data-target="#deleteModal"><i data-feather="x"></i></a>
@@ -73,64 +73,56 @@
                                             <div class="modal-body">
                                                 <h5 class="">Dados Pessoais</h5>
                                                 <hr>
-                                                <form class="row g-3 needs-validation" novalidate>
+                                                <form class="row g-3 needs-validation">
                                                     <div class="col-md-8 position-relative">
-                                                        <label for="validationTooltip01" class="form-label">Nome Completo</label>
-                                                        <input type="text" class="form-control" readonly value="#">
-
+                                                        <label for="vNomeCliente" class="form-label">Nome Completo</label>
+                                                        <input type="text" class="form-control" name="vNomeCliente" readonly value="${clienteAtualizacao.nome}">
                                                     </div>
                                                     <div class="col-md-4 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">CPF</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vCpfCliente" class="form-label">CPF</label>
+                                                        <input type="text" class="form-control" name="vCpfCliente" readonly value="${clienteAtualizacao.cpf}">
                                                     </div>
                                                     <div class="col-md-6 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">E-mail</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vEmailCliente" class="form-label">E-mail</label>
+                                                        <input type="text" class="form-control" name="vEmailCliente" readonly value="${clienteAtualizacao.email}">
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">Data de Nascimento</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vDataNascimentoCliente" class="form-label">Data de Nascimento</label>
+                                                        <input type="text" class="form-control" name="vDataNascimentoCliente" readonly value="${clienteAtualizacao.dataNascimento}">
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="exampleFormControlSelect1">Estado Cívil</label>
-                                                            <input type="text" class="form-control" readonly value="#">
-                                                        </div>
+                                                        <label class="form-label" for="vEstadoCivilCliente">Estado Cívil</label>
+                                                        <input type="text" class="form-control" name="vEstadoCivilCliente" readonly value="${clienteAtualizacao.estadoCivil}">
                                                     </div>
                                                     <div class="col-md-4 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">Telefone</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vTelefoneCliente" class="form-label">Telefone</label>
+                                                        <input type="text" class="form-control" name="vTelefoneCliente" readonly value="${clienteAtualizacao.numeroTelefone}">
                                                     </div>
-
-                                                </form>
-                                                <h5 class="mt-5">Endereço</h5>
-                                                <hr>
-                                                <form class="row g-3 needs-validation" novalidate>
+                                                    <h5 class="mt-5">Endereço</h5>
+                                                    <hr>
                                                     <div class="col-md-6 position-relative">
-                                                        <label for="validationTooltip01" class="form-label">Lougradouro</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vLogradouroCliente" class="form-label">Lougradouro</label>
+                                                        <input type="text" class="form-control" name="vLogradouroCliente" readonly value="${clienteAtualizacao.lougradouro}">
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">Número</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vNumeroCliente" class="form-label">Número</label>
+                                                        <input type="text" class="form-control" name="vNumeroCliente" readonly value="${clienteAtualizacao.numero}">
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">CEP</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vCepCliente" class="form-label">CEP</label>
+                                                        <input type="text" class="form-control" name="vCepCliente" readonly value="${clienteAtualizacao.cep}">
                                                     </div>
                                                     <div class="col-md-4 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">Bairro</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label for="vBairroCliente" class="form-label">Bairro</label>
+                                                        <input type="text" class="form-control" name="vBairroCliente" readonly value="${clienteAtualizacao.bairro}">
                                                     </div>
                                                     <div class="col-md-4 position-relative">
-                                                        <label for="validationTooltip02" class="form-label">Cidade</label>
-                                                        <input type="text" class="form-control" readonly value="#">
+                                                        <label class="form-label" for="vCidadeCliente">Cidade</label>
+                                                        <input type="text" class="form-control" name="vCidadeCliente" readonly value="${clienteAtualizacao.cidade}">
                                                     </div>
                                                     <div class="col-md-3 position-relative">
-                                                        <div class="form-group">
-                                                            <label class="form-label" for="exampleFormControlSelect2">Estado</label>
-                                                            <input type="text" class="form-control" readonly value="#">
-                                                        </div>
+                                                        <label class="form-label" for="vUfCliente">Estado</label>
+                                                        <input type="text" class="form-control" name="vUfCliente" readonly value="${clienteAtualizacao.uf}">
                                                     </div>
                                                 </form>
                                             </div>
