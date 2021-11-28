@@ -24,8 +24,6 @@
                                 <h3>Cadastro de Produtos</h3>
                             </div>
                             <div class="card-body">
-                                <h5 class="">Novo Produto</h5>
-                                <hr>
                                 <form class="row g-3">
                                     <c:if test="${not empty produtoAtualizacao}">
                                         <input type="hidden" name="operacaoProduto" value="1"/>
