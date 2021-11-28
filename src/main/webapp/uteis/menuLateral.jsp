@@ -15,7 +15,7 @@
 <!-- [ Mobile header ] start -->
 <div class="pc-mob-header pc-header">
     <div class="pcm-logo">
-        <img src="${pageContext.request.contextPath}/lib/images/logo.svg" alt="" class="logo logo-lg">
+        <img src="${pageContext.request.contextPath}/lib/images/logo_light_sm.jpg" alt="" class="logo logo-lg">
     </div>
     <div class="pcm-toolbar">
         <a href="#!" class="pc-head-link" id="mobile-collapse">
@@ -41,8 +41,8 @@
         <div class="m-header">
             <a href="index.html" class="b-brand">
                 <!-- ========   change your logo hear   ============ -->
-                <img src="${pageContext.request.contextPath}/lib/images/logo.svg" alt="" class="logo logo-lg">
-                <img src="${pageContext.request.contextPath}/lib/images/logo-sm.svg" alt="" class="logo logo-sm">
+                <img src="${pageContext.request.contextPath}/lib/images/logo_light_sm.jpg" alt="" class="logo logo-lg">
+                <img src="${pageContext.request.contextPath}/lib/images/logo_light_sm.jpg" alt="" class="logo logo-sm">
             </a>
         </div>
         <div class="navbar-content">
