@@ -14,3 +14,5 @@
 <!-- Jquery Data Table -->
 <script src="${pageContext.request.contextPath}/lib/js/jquery.dataTables.min.js" type="text/javascript"></script>
 
+<!-- Jquery Mask Plugin -->
+<script src="${pageContext.request.contextPath}/lib/js/jquery.maskPlugin.min.js" type="text/javascript"></script>
