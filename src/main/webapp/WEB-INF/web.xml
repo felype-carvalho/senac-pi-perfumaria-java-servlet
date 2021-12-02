@@ -82,75 +82,75 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastrarCategoriaServlet</servlet-name>
-        <url-pattern>/categoria-produto/cadastrar</url-pattern>
+        <url-pattern>/categoria/CadastrarCategoriaServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarCategoriaServlet</servlet-name>
-        <url-pattern>/categoria-produto/listar</url-pattern>
+        <url-pattern>/categoria/ListarCategoriaServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>VisualizarCategoriaServlet</servlet-name>
-        <url-pattern>/categoria-produto/visualizar</url-pattern>
+        <url-pattern>/categoria/visualizar</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastrarClienteServlet</servlet-name>
-        <url-pattern>/cliente/cadastrar</url-pattern>
+        <url-pattern>/cliente/CadastrarClienteServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarClienteServlet</servlet-name>
-        <url-pattern>/cliente/listar</url-pattern>
+        <url-pattern>/cliente/ListarClienteServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>VisualizarClienteServlet</servlet-name>
-        <url-pattern>/cliente/visualizar</url-pattern>
+        <url-pattern>/cliente/VisualizarClienteServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastrarFilialServlet</servlet-name>
-        <url-pattern>/filial/cadastrar</url-pattern>
+        <url-pattern>/filial/CadastrarFilialServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarFilialServlet</servlet-name>
-        <url-pattern>/filial/listar</url-pattern>
+        <url-pattern>/filial/ListarFilialServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>VisualizarFilialServlet</servlet-name>
-        <url-pattern>/filial/visualizar</url-pattern>
+        <url-pattern>/filial/VisualizarFilialServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastrarProdutoServlet</servlet-name>
-        <url-pattern>/produto/cadastrar</url-pattern>
+        <url-pattern>/produto/CadastrarProdutoServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarProdutoServlet</servlet-name>
-        <url-pattern>/produto/listar</url-pattern>
+        <url-pattern>/produto/ListarProdutoServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>VisualizarProdutoServlet</servlet-name>
-        <url-pattern>/produto/visualizar</url-pattern>
+        <url-pattern>/produto/VisualizarProdutoServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastrarUsuarioServlet</servlet-name>
-        <url-pattern>/usuario/cadastrar</url-pattern>
+        <url-pattern>/usuario/CadastrarUsuarioServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ListarUsuarioServlet</servlet-name>
-        <url-pattern>/usuario/listar</url-pattern>
+        <url-pattern>/usuario/ListarUsuarioServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>VisualizarUsuarioServlet</servlet-name>
-        <url-pattern>/usuario/visualizar</url-pattern>
+        <url-pattern>/usuario/VisualizarUsuarioServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RelatorioFilialServlet</servlet-name>
-        <url-pattern>/relatorio/filial</url-pattern>
+        <url-pattern>/relatorio/RelatorioFilialServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>RelatorioSemanalServlet</servlet-name>
-        <url-pattern>/relatorio/semanal</url-pattern>
+        <url-pattern>/relatorio/RelatorioSemanalServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CadastrarVendaServlet</servlet-name>
-        <url-pattern>/venda/cadastrar</url-pattern>
+        <url-pattern>/venda/CadastrarVendaServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

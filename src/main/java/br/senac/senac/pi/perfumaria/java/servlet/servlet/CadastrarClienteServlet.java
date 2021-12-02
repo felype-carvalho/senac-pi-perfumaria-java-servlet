@@ -10,6 +10,8 @@ import br.senac.senac.pi.perfumaria.java.servlet.entidades.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -26,24 +28,32 @@ public class CadastrarClienteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String operacao = request.getParameter("operacaoCliente");
 
-        String nome = request.getParameter("nomeCliente");
-        String cpf = request.getParameter("cpfCliente");
-        String email = request.getParameter("emailCliente");
-        String dataNascimento = request.getParameter("dataNascimentoCliente");
-        String estadoCivil = request.getParameter("estadoCivilCliente");
-        String numeroTelefone = request.getParameter("telefoneCliente");
-        String logradouro = request.getParameter("logradouroCliente");
-        String numero = request.getParameter("numeroCliente");
-        String cep = request.getParameter("cepCliente");
-        String bairro = request.getParameter("bairroCliente");
-        String cidade = request.getParameter("cidadeCliente");
-        String uf = request.getParameter("ufCliente");
+        String nome = request.getParameter("cNomeCliente");
+        String cpf = request.getParameter("cCpfCliente");
+        String email = request.getParameter("cEmailCliente");
+        String dataNascimento = request.getParameter("cDataNascimentoCliente");
+        String estadoCivil = request.getParameter("cEstadoCivilCliente");
+        String numeroTelefone = request.getParameter("cTelefoneCliente");
+        String logradouro = request.getParameter("cLogradouroCliente");
+        String numero = request.getParameter("cNumeroCliente");
+        String cep = request.getParameter("cCepCliente");
+        String bairro = request.getParameter("cBairroCliente");
+        String cidade = request.getParameter("cCidadeCliente");
+        String uf = request.getParameter("cUfCliente");
+        
+        SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
+        Date novaDataFormatada = new Date();
+        try {
+            novaDataFormatada = formatoData.parse(dataNascimento);
+        } catch (ParseException ex) {
+            System.out.println("Erro na conversão de data! " + ex);
+        }
 
         Cliente cliente = new Cliente();
         cliente.setNome(nome);
         cliente.setCpf(cpf);
         cliente.setEmail(email);
-        cliente.setDataNascimento(new Date(dataNascimento));
+        cliente.setDataNascimento(novaDataFormatada);
         cliente.setEstadoCivil(estadoCivil);
         cliente.setNumeroTelefone(numeroTelefone);
         cliente.setLogradouro(logradouro);

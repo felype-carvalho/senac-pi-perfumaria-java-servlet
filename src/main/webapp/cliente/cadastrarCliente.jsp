@@ -40,7 +40,7 @@
                                     </div>
                                     <div class="col-md-6 position-relative">
                                         <label for="cEmailCliente" class="form-label">E-mail</label>
-                                        <input type="text" name="cEmailCliente" class="form-control" required value="${mailClienclienteAtualizacao.email}">
+                                        <input type="text" name="cEmailCliente" class="form-control" required value="${clienteAtualizacao.email}">
                                     </div>
                                     <div class="col-md-3 position-relative">
                                         <label for="cDataNascimentoCliente" class="form-label">Data de Nascimento</label>
