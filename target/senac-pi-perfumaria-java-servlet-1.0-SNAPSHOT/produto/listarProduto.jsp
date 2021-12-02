@@ -13,7 +13,6 @@
         <title>Listar Produtos</title>
     </head>
     <body class="">
-        <!-- <h1>Tela Principal</h1> -->
         <c:import url="../uteis/menuLateral.jsp"/>
         <div id="alertaProduto" class="alert alert-success" role="alert" style="display:none">
             Produto removido com sucesso!

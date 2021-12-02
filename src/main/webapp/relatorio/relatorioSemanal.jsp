@@ -24,9 +24,14 @@
                             </div>
                             <div class="card-body">
                                 <form class="row g-3">
-                                    <div class="col-sm-4 position-relative">
-                                        <label for="peridoRelSemanal" class="form-label">Selecione o perido</label>
-                                        <input type="text" class="form-control" name="peridoRelSemanal" id="peridoRelSemanal" required">
+                                    <h4>Selecione o Período</h4>
+                                    <div class="col-sm-2 position-relative">
+                                        <label for="peridoRelSemanalDe" class="form-label">De:</label>
+                                        <input type="text" class="form-control" name="peridoRelSemanalDe" id="peridoRelSemanalDe" required">
+                                    </div>
+                                    <div class="col-sm-2 position-relative">
+                                        <label for="peridoRelSemanalAte" class="form-label">Até:</label>
+                                        <input type="text" class="form-control" name="peridoRelSemanalAte" id="peridoRelSemanalAte" required">
                                     </div>
                                     <div class="col-sm-8 position-relative">
                                         <button class="btn btn-primary mt-4" type="submit">Gerar</button>
@@ -54,7 +59,8 @@
     <script src="${pageContext.request.contextPath}/lib/js/pages/chart-apex.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#peridoRelSemanal').mask('00/00/0000');
+            $('#peridoRelSemanalDe').mask('00/00/0000');
+            $('#peridoRelSemanalAte').mask('00/00/0000');
         });
         $(document).ready(function () {
             setTimeout(function () {
